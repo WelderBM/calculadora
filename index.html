@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div id="conteiner">
+        <input id="result" class="buttons">
+        <div id="lineOne">
+            <div onclick="sum()" id="sum" class="buttons lineOne">
+                <p>+</p>
+            </div>
+            <div onclick="sub()" id="subtraction" class="buttons lineOne">
+                <p>-</p>
+            </div>
+            <div onclick="mult()" id="mult" class="buttons lineOne">
+                <p>×</p>
+            </div>
+            <div onclick="div()" id="division" class="buttons lineOne">
+                <p>÷</p>
+            </div>
+        </div>
+        <div id="divNumbersAndEqual">
+            <div id="conteinerNumbers">
+                <div class="lineNumbers">
+                    <div onclick="one()" id="one" class="buttons">
+                        <p>1</p>
+                    </div>
+                    <div onclick="two()" id="two" class="buttons">
+                        <p>2</p>
+                    </div>
+                    <div onclick="three()" id="three" class="buttons">
+                        <p>3</p>
+                    </div>
+                </div>
+                <div class="lineNumbers">
+                    <div onclick="four()" id="four" class="buttons">
+                        <p>4</p>
+                    </div>
+                    <div onclick="five()" id="five" class="buttons">
+                        <p>5</p>
+                    </div>
+                    <div onclick="six()" id="six" class="buttons">
+                        <p>6</p>
+                    </div>
+                </div>
+                <div class="lineNumbers">
+                    <div onclick="seven()" id="seven" class="buttons">
+                        <p>7</p>
+                    </div>
+                    <div onclick="eight()" id="eight" class="buttons">
+                        <p>8</p>
+                    </div>
+                    <div onclick="nine()" id="nine" class="buttons">
+                        <p>9</p>
+                    </div>
+                </div>
+                <div class="lineNumbers">
+                    <div onclick="zero()" id="zero" class="buttons">
+                        <p>0</p>
+                    </div>
+                    <div onclick="dot()" id="dot" class="buttons">
+                        <p>.</p>
+                    </div>
+                    <div onclick="C()" id="C" class="buttons">
+                        <p>C</p>
+                    </div>
+                </div>
+            </div>
+            <div onclick="equal()" id="equal" class="buttons">
+                <p  id="equalP">=</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+<script src="./scripts.js"></script>
+
+</html>
